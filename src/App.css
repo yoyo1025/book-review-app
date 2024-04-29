@@ -1,38 +1,95 @@
-.App {
+body {
+  background: rgb(92, 55, 180);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(92, 55, 180, 1) 16%,
+    rgba(58, 43, 169, 1) 100%,
+    rgba(34, 35, 161, 0.6683484673166141) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(92, 55, 180, 1) 16%,
+    rgba(58, 43, 169, 1) 100%,
+    rgba(34, 35, 161, 0.6683484673166141) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(92, 55, 180, 1) 16%,
+    rgba(58, 43, 169, 1) 100%,
+    rgba(34, 35, 161, 0.6683484673166141) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5c37b4",endColorstr="#00d4ff",GradientType=1);
+  overflow-y: hidden;
+}
+
+.formContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.formContainer form {
+  background-color: #f8f8f8;
+  width: 70%;
+  max-width: 450px;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #dfdfdf;
+  box-shadow: 32px 33px 24px -25px #777777;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.uiForm {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+  height: 400px;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formField input {
+  border: 1px solid grey;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.formField input:focus {
+  outline: none;
+}
+
+.formField label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+button {
+  background-color: #1b66a7;
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  padding: 10px 30px;
   color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: #175892;
 }
