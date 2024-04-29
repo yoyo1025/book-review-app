@@ -7,10 +7,10 @@ function App() {
         <h1>ログインフォーム</h1>
         <hr />
         <div className="uiForm">
-          <div className="formField">
+          {/* <div className="formField">
             <label>ユーザー名</label>
             <input type="text" placeholder="ユーザー名" name="username" />
-          </div>
+          </div> */}
           <div className="formField">
             <label>メールアドレス</label>
             <input
@@ -21,7 +21,7 @@ function App() {
           </div>
           <div className="formField">
             <label>パスワード</label>
-            <input type="text" placeholder="ユーザー名" name="password" />
+            <input type="text" placeholder="パスワード" name="password" />
           </div>
           <button className="submitButton">ログイン</button>
         </div>
