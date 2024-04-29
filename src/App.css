@@ -1,5 +1,4 @@
 body {
-  /* background: rgb(92, 55, 180);
   background: -moz-linear-gradient(
     90deg,
     rgba(92, 55, 180, 1) 16%,
@@ -21,27 +20,7 @@ body {
     rgba(34, 35, 161, 0.6683484673166141) 100%,
     rgba(0, 212, 255, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5c37b4",endColorstr="#00d4ff",GradientType=1); */
-  background: rgb(77, 54, 198);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(77, 54, 198, 1) 0%,
-    rgba(70, 63, 222, 1) 100%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(77, 54, 198, 1) 0%,
-    rgba(70, 63, 222, 1) 100%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(77, 54, 198, 1) 0%,
-    rgba(70, 63, 222, 1) 100%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4d36c6",endColorstr="#00d4ff",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5c37b4",endColorstr="#00d4ff",GradientType=1);
   overflow-y: hidden;
 }
 
@@ -104,7 +83,6 @@ button {
   margin-top: 20px;
   border: none;
   padding: 10px 30px;
-  height: 50px;
   color: white;
   font-size: 15px;
   cursor: pointer;
