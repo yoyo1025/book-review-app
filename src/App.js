@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <header className="header">
         <div className="header_inner">
-          <h1 className="title-logo">LOGO</h1>
+          <h1 className="title-logo">BookView</h1>
           <nav className="gnav">
             <ul className="gnav-list">
               <ui>

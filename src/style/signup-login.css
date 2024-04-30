@@ -1,31 +1,31 @@
 body {
+  /* background: rgb(77, 54, 198);
   background: -moz-linear-gradient(
     90deg,
-    rgba(92, 55, 180, 1) 16%,
-    rgba(58, 43, 169, 1) 100%,
-    rgba(34, 35, 161, 0.6683484673166141) 100%,
+    rgba(77, 54, 198, 1) 0%,
+    rgba(205, 226, 255, 0) 100%,
     rgba(0, 212, 255, 1) 100%
   );
   background: -webkit-linear-gradient(
     90deg,
-    rgba(92, 55, 180, 1) 16%,
-    rgba(58, 43, 169, 1) 100%,
-    rgba(34, 35, 161, 0.6683484673166141) 100%,
+    rgba(77, 54, 198, 1) 0%,
+    rgba(205, 226, 255, 0) 100%,
     rgba(0, 212, 255, 1) 100%
   );
   background: linear-gradient(
     90deg,
-    rgba(92, 55, 180, 1) 16%,
-    rgba(58, 43, 169, 1) 100%,
-    rgba(34, 35, 161, 0.6683484673166141) 100%,
+    rgba(77, 54, 198, 1) 0%,
+    rgba(205, 226, 255, 0) 100%,
     rgba(0, 212, 255, 1) 100%
-  );
+  ); */
+  background-color: rgb(234, 255, 234);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4d36c6",endColorstr="#00d4ff",GradientType=1);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5c37b4",endColorstr="#00d4ff",GradientType=1);
   overflow-y: hidden;
 }
 
 .formContainer {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   display: flex;
   align-items: center;

@@ -4,26 +4,18 @@ export const Login = () => {
   return (
     <div className="formContainer">
       <form>
-        <h1>ログインフォーム</h1>
+        <h1>LoginForm</h1>
         <hr />
         <div className="uiForm">
-          {/* <div className="formField">
-            <label>ユーザー名</label>
-            <input type="text" placeholder="ユーザー名" name="username" />
-          </div> */}
           <div className="formField">
-            <label>メールアドレス</label>
-            <input
-              type="text"
-              placeholder="メールアドレス"
-              name="mailAddress"
-            />
+            <label>Email</label>
+            <input type="text" placeholder="e-mail" name="mailAddress" />
           </div>
           <div className="formField">
-            <label>パスワード</label>
-            <input type="text" placeholder="パスワード" name="password" />
+            <label>Password</label>
+            <input type="text" placeholder="password" name="password" />
           </div>
-          <button className="submitButton">ログイン</button>
+          <button className="submitButton">Login</button>
         </div>
       </form>
     </div>
