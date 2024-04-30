@@ -1,6 +1,6 @@
 import "./../style/signup-login.css";
 
-function Login() {
+export const Login = () => {
   return (
     <div className="formContainer">
       <form>
@@ -28,6 +28,6 @@ function Login() {
       </form>
     </div>
   );
-}
+};
 
-export default App;
+export default Login;

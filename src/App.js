@@ -1,9 +1,12 @@
 import React from "react";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import "./style/App.css";
+import Login from "./component/Login";
+import Signup from "./component/Signup";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <header className="header">
         <div className="header_inner">
           <h1 className="title-logo">LOGO</h1>
@@ -19,13 +22,20 @@ function App() {
                 <a href="">お問い合わせ</a>
               </ui>
               <ui>
-                <a href="">ログイン/サインイン</a>
+                <Link to="/login">login</Link>
+              </ui>
+              <ui>
+                <Link to="/signup">signup</Link>
               </ui>
             </ul>
           </nav>
         </div>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
       </header>
-    </>
+    </BrowserRouter>
   );
 }
 
