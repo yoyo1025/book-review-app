@@ -1,32 +1,31 @@
-import "./App.css";
+import React from "react";
+import "./style/App.css";
 
 function App() {
   return (
-    <div className="formContainer">
-      <form>
-        <h1>ログインフォーム</h1>
-        <hr />
-        <div className="uiForm">
-          {/* <div className="formField">
-            <label>ユーザー名</label>
-            <input type="text" placeholder="ユーザー名" name="username" />
-          </div> */}
-          <div className="formField">
-            <label>メールアドレス</label>
-            <input
-              type="text"
-              placeholder="メールアドレス"
-              name="mailAddress"
-            />
-          </div>
-          <div className="formField">
-            <label>パスワード</label>
-            <input type="text" placeholder="パスワード" name="password" />
-          </div>
-          <button className="submitButton">ログイン</button>
+    <>
+      <header className="header">
+        <div className="header_inner">
+          <h1 className="title-logo">LOGO</h1>
+          <nav className="gnav">
+            <ul className="gnav-list">
+              <ui>
+                <a href="">特徴</a>
+              </ui>
+              <ui>
+                <a href="">料金</a>
+              </ui>
+              <ui>
+                <a href="">お問い合わせ</a>
+              </ui>
+              <ui>
+                <a href="">ログイン/サインイン</a>
+              </ui>
+            </ul>
+          </nav>
         </div>
-      </form>
-    </div>
+      </header>
+    </>
   );
 }
 

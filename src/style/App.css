@@ -1,0 +1,28 @@
+.header_inner {
+  max-width: 1920px;
+  margin: auto;
+  padding: 20px 60px;
+  background-color: #7383dd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-logo {
+  font-size: 30ox;
+  font-weight: bold;
+}
+
+.gnav-list {
+  display: flex;
+  font-weight: bold;
+}
+
+.gnav-list ui {
+  margin-left: 30px;
+}
+
+a {
+  color: white;
+  font-size: 22px;
+}
