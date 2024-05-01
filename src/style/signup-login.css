@@ -1,5 +1,5 @@
 body {
-  background: rgb(166, 149, 255);
+  /* background: rgb(166, 149, 255);
   background: -moz-linear-gradient(
     90deg,
     rgba(166, 149, 255, 1) 0%,
@@ -20,7 +20,7 @@ body {
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a695ff",endColorstr="#00d4ff",GradientType=1);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4d36c6",endColorstr="#00d4ff",GradientType=1);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5c37b4",endColorstr="#00d4ff",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5c37b4",endColorstr="#00d4ff",GradientType=1); */
   overflow-y: hidden;
 }
 
