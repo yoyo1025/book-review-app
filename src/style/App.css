@@ -90,10 +90,10 @@ a {
 }
 
 .create-review {
-  padding: 15px;
-  margin: 40px;
-  width: 7%;
+  align-items: center;
   background-color: aliceblue;
   color: black;
-  font-size: 17px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
 }

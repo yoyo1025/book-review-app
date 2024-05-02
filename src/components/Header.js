@@ -1,4 +1,5 @@
 import "../style/App.css";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -9,7 +10,9 @@ export const Header = () => {
           className="search-box"
           placeholder="書名で検索する"
         />
-        <button className="create-review">投稿する</button>
+        <Link to={`/create`}>
+          <button className="create-review">投稿する</button>
+        </Link>
       </div>
     </header>
   );
