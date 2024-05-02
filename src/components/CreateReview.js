@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import "../style/App.css";
 
 export const CreateReview = () => {
-  const [image, setImage] = useState(null); // 選択された画像の状態
+  const [image, setImage] = useState(null);
 
   const handleImageChange = (e) => {
-    const file = e.target.files[0]; // 選択されたファイルを取得
+    const file = e.target.files[0];
     if (file && file.type.substr(0, 5) === "image") {
-      setImage(URL.createObjectURL(file)); // 画像ファイルの場合、URLを生成して状態を更新
+      setImage(URL.createObjectURL(file));
     } else {
-      setImage(null); // 画像ファイルでない場合はnullをセット
+      setImage(null);
     }
   };
 
