@@ -92,5 +92,8 @@ a {
 .create-review {
   padding: 15px;
   margin: 40px;
-  width: 5%;
+  width: 7%;
+  background-color: aliceblue;
+  color: black;
+  font-size: 17px;
 }
