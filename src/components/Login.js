@@ -1,33 +1,27 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "./AuthContext"; // AuthContextからuseAuthをインポート
 import "./../style/signup-login.css";
 
 export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const { login } = useAuth(); // login関数をuseAuthから取得
   const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
-    event.preventDefault(); // フォームのデフォルト送信を防ぐ
+    event.preventDefault();
 
     try {
       const response = await axios.post(
         `${process.env.REACT_APP_API_URL}/login`,
-        {
-          email: email,
-          password: password,
-        }
+        { email, password }
       );
-
-      // JWTトークンを保存する例（通常はlocalStorageやセッションに保存）
-      localStorage.setItem("token", response.data.token);
-
-      // 認証成功後に/homeに遷移
-      navigate("/home");
+      login(response.data.token); // 認証状態を更新
+      navigate("/home"); // ホームに遷移
     } catch (error) {
       console.error("Login error", error);
-      // エラー処理（アラート表示やメッセージ表示など）
       alert("Login failed!");
     }
   };
