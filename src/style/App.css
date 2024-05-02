@@ -27,7 +27,7 @@
 }
 
 .title-logo {
-  font-size: 30ox;
+  font-size: 30px;
   font-weight: bold;
   color: aliceblue;
   /* background-color: rgb(0, 0, 0); */
@@ -90,10 +90,59 @@ a {
 }
 
 .create-review {
+  display: flex;
+  justify-content: center;
   align-items: center;
   background-color: aliceblue;
   color: black;
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 20px;
+  padding: 20px;
+}
+/* アプリケーション全体のコンテナ */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; ビューポートの高さを全体に使う */
+  /* background-color: #f0f0f0; 背景色の調整も可能です */
+}
+
+/* フォームコンテナのスタイリング */
+.form-container {
+  display: flex;
+  flex-direction: column; /* 要素を縦に並べる */
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(216, 220, 240);
+  border-radius: 10px;
+  border: 1px solid #dfdfdf;
+  box-shadow: 0 4px 8px rgba(119, 119, 119, 0.5);
+  padding: 20px;
+  width: 55%; /* フォームの幅を調整 */
+}
+
+.review-image {
+  font-size: large;
+  margin-bottom: 20px;
+}
+
+.review-title {
+  font-size: large;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.review-comment {
+  font-size: large;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.review-submit {
+  width: 80px;
+  padding: 5px;
+  font-size: large;
+  background-color: rgb(172, 189, 244);
 }

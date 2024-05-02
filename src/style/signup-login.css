@@ -21,7 +21,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a695ff",endColorstr="#00d4ff",GradientType=1);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4d36c6",endColorstr="#00d4ff",GradientType=1);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5c37b4",endColorstr="#00d4ff",GradientType=1); */
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 .formContainer {
@@ -92,4 +92,10 @@ button {
 
 button:hover {
   background-color: #175892;
+}
+
+.review-title-container {
+  padding: 10px;
+  width: 85%;
+  font-size: 20px;
 }
