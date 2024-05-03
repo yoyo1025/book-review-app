@@ -146,3 +146,19 @@ a {
   font-size: large;
   background-color: rgb(172, 189, 244);
 }
+
+.book-picture {
+  width: 400px;
+  height: 500px;
+}
+
+.book-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.book {
+  margin-left: 50px;
+  margin-right: 50px;
+}
