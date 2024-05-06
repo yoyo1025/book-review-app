@@ -73,3 +73,11 @@ button:hover {
   width: 85%;
   font-size: 20px;
 }
+
+.mailAddress {
+  font-size: large;
+}
+
+.password {
+  font-size: large;
+}
