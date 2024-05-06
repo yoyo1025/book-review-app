@@ -24,11 +24,15 @@ export const CreateReview = () => {
       const formData = new FormData();
       formData.append("image", image);
       try {
-        await axios.post("http://localhost:8080/books/upload", formData, {
-          headers: {
-            "Content-Type": "multipart/form-data",
-          },
-        });
+        await axios.post(
+          `${process.env.REACT_APP_API_URL}/books/upload`,
+          formData,
+          {
+            headers: {
+              "Content-Type": "multipart/form-data",
+            },
+          }
+        );
       } catch (error) {
         console.error("Error uploading image", error);
       }
@@ -36,7 +40,10 @@ export const CreateReview = () => {
 
     // タイトルとコメントを送信
     try {
-      await axios.post("http://localhost:8080/books", { title, comment });
+      await axios.post(`${process.env.REACT_APP_API_URL}/books`, {
+        title,
+        comment,
+      });
     } catch (error) {
       console.error("Error posting review", error);
     }

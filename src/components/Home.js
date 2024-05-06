@@ -2,7 +2,6 @@ import { Header } from "./Header";
 import "../style/App.css";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Navi from "./Navi";
 
 export const Home = () => {
   const [books, setBooks] = useState([]);
@@ -10,9 +9,12 @@ export const Home = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/books", {
-          withCredentials: true, // クッキーを利用する場合
-        });
+        const response = await axios.get(
+          `${process.env.REACT_APP_API_URL}/books`,
+          {
+            withCredentials: true, // クッキーを利用する場合
+          }
+        );
         setBooks(response.data);
       } catch (error) {
         console.error("Error fetching books:", error);

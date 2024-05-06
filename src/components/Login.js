@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "./AuthContext"; // AuthContextからuseAuthをインポート
+import { useAuth } from "./AuthContext";
 import "./../style/signup-login.css";
 
 export const Login = () => {
@@ -19,7 +19,7 @@ export const Login = () => {
         { email, password }
       );
       login(response.data.token); // 認証状態を更新
-      navigate("/home"); // ホームに遷移
+      navigate("/home");
     } catch (error) {
       console.error("Login error", error);
       alert("Login failed!");

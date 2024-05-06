@@ -2,7 +2,7 @@ import "./../style/signup-login.css";
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "./AuthContext"; // AuthContextからuseAuthをインポート
+import { useAuth } from "./AuthContext";
 
 export const Signup = () => {
   const [email, setEmail] = useState("");
@@ -18,7 +18,7 @@ export const Signup = () => {
         { email, password }
       );
       signup(response.data.token); // 認証状態を更新
-      navigate("/home"); // ホームに遷移
+      navigate("/home");
     } catch (error) {
       console.error("SignUp error", error);
       alert("SignUp failed!");
