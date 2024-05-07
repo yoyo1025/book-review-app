@@ -2,6 +2,7 @@ import { Header } from "./Header";
 import "../style/App.css";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   const [books, setBooks] = useState([]);
@@ -37,11 +38,13 @@ export const Home = () => {
                 <p>{book.comment}</p>
                 {book.pictures &&
                   book.pictures.map((picture) => (
-                    <img
-                      src={`data:image/jpeg;base64,${picture.imageBase64}`}
-                      alt="Book Cover"
-                      className="book-picture"
-                    />
+                    <Link to={`/books/${book.id}`}>
+                      <img
+                        src={`data:image/jpeg;base64,${picture.imageBase64}`}
+                        alt="Book Cover"
+                        className="book-picture"
+                      />
+                    </Link>
                   ))}
               </li>
             ))}
