@@ -5,7 +5,7 @@ export const Navi = () => {
   return (
     <header className="header">
       <div className="header_inner">
-        <h1 className="title-logo">BookView</h1>
+        <h1 className="title-logo">BookViews</h1>
         <nav className="gnav">
           <ul className="gnav-list">
             <ui>
