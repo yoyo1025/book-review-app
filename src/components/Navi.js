@@ -5,14 +5,11 @@ export const Navi = () => {
   return (
     <header className="header">
       <div className="header_inner">
-        <h1 className="title-logo">BookViews</h1>
+        <h1 className="title-logo">BookReviews</h1>
         <nav className="gnav">
           <ul className="gnav-list">
             <ui>
               <a href="">特徴</a>
-            </ui>
-            <ui>
-              <a href="">料金</a>
             </ui>
             <ui>
               <a href="">お問い合わせ</a>
