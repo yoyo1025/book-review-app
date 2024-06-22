@@ -37,6 +37,7 @@ export const Signup = () => {
               type="text"
               placeholder="e-mail"
               name="mailAddress"
+              className="mailAddress"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -47,6 +48,7 @@ export const Signup = () => {
               type="password"
               placeholder="password"
               name="password"
+              className="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
