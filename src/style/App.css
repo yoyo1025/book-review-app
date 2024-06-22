@@ -75,9 +75,6 @@ a {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a695ff",endColorstr="#00d4ff",GradientType=1);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4d36c6",endColorstr="#00d4ff",GradientType=1);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5c37b4",endColorstr="#00d4ff",GradientType=1);
-}
-
-.search {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,27 +97,19 @@ a {
   font-size: 20px;
   padding: 20px;
 }
-/* アプリケーション全体のコンテナ */
-.app-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* min-height: 100vh; ビューポートの高さを全体に使う */
-  /* background-color: #f0f0f0; 背景色の調整も可能です */
-}
 
 /* フォームコンテナのスタイリング */
 .form-container {
   display: flex;
   flex-direction: column; /* 要素を縦に並べる */
-  justify-content: center;
-  align-items: center;
+  align-items: center; 
   background-color: rgb(216, 220, 240);
   border-radius: 10px;
   border: 1px solid #dfdfdf;
   box-shadow: 0 4px 8px rgba(119, 119, 119, 0.5);
   padding: 20px;
-  width: 55%; /* フォームの幅を調整 */
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .review-image {
@@ -143,8 +132,13 @@ a {
 .review-submit {
   width: 80px;
   padding: 5px;
+  margin: 20px;
   font-size: large;
-  background-color: rgb(172, 189, 244);
+  background-color: rgb(59, 83, 164);
+  border-radius: 5px;
+  color: #dfdfdf;
+  width: 100px;
+  height: 50px;
 }
 
 .book-picture {
@@ -154,6 +148,7 @@ a {
 
 .book-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
 }
@@ -161,4 +156,21 @@ a {
 .book {
   margin-left: 50px;
   margin-right: 50px;
+}
+
+.review-title-container {
+  padding: 10px;
+  width: 90%;
+  font-size: 150%;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  box-shadow: 32px 33px 24px -25px #777777;
+}
+.review-comment-container {
+  font-size: 150%;
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  box-shadow: 32px 33px 24px -25px #c7c7c7;
 }

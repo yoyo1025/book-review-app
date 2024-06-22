@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 export const Header = () => {
   return (
     <header className="home-header">
-      <div className="search">
         <input
           type="text"
           className="search-box"
@@ -13,7 +12,6 @@ export const Header = () => {
         <Link to={`/create`}>
           <button className="create-review">投稿する</button>
         </Link>
-      </div>
     </header>
   );
 };

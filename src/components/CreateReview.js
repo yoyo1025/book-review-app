@@ -40,10 +40,13 @@ export const CreateReview = () => {
 
     // タイトルとコメントを送信
     try {
-      await axios.post(`${process.env.REACT_APP_API_URL}/books`, {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/books`, {
         title,
         comment,
       });
+      if (response != null) {
+        
+      }
     } catch (error) {
       console.error("Error posting review", error);
     }
@@ -53,7 +56,6 @@ export const CreateReview = () => {
     <>
       <h1>書籍を投稿する</h1>
       <hr />
-      <div className="app-container">
         <div className="form-container">
           <form onSubmit={handleSubmit}>
             <ul>
@@ -91,7 +93,6 @@ export const CreateReview = () => {
             <input type="submit" className="review-submit" />
           </form>
         </div>
-      </div>
     </>
   );
 };
