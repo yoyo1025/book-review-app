@@ -174,3 +174,16 @@ a {
   border: 2px solid #000000;
   box-shadow: 32px 33px 24px -25px #c7c7c7;
 }
+.top-pictures {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-code {
+  width: 45%;
+  height: 20%;
+  margin: 1%;
+}
+.image-robot {
+  width: 30%;
+}
