@@ -45,10 +45,9 @@ export const Home = () => {
 
   return (
     <>
-      <Header />
+      <Header username={user ? user.username : null} />
       <div>
         <h1>Books</h1>
-        {user && <div>Welcome, {user.username}!</div>}
         {books.length > 0 ? (
           <ul className="book-list">
             {books.map((book) => (
