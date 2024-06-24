@@ -1,22 +1,22 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useAuth } from "./AuthContext"; // AuthContextをインポート
+import { useAuth } from "./AuthContext";
 import { Header } from "./Header";
 import "../style/App.css";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
   const [books, setBooks] = useState([]);
-  const [user, setUser] = useState(null); // ユーザー情報を保持するためのstate
-  const { isAuthenticated } = useAuth(); // 認証状態を確認するため
+  const [user, setUser] = useState(null);
+  const [searchQuery, setSearchQuery] = useState("");
+  const { isAuthenticated } = useAuth();
 
   useEffect(() => {
     const fetchUser = async () => {
-      const userId = localStorage.getItem("userId"); // ローカルストレージからユーザーIDを取得
-
+      const userId = localStorage.getItem("userId");
       try {
         const response = await axios.get(`${process.env.REACT_APP_API_URL}/user/${userId}`);
-        setUser(response.data); // ユーザー情報をstateに保存
+        setUser(response.data);
       } catch (error) {
         console.error("Error fetching user:", error);
       }
@@ -30,10 +30,7 @@ export const Home = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await axios.get(
-          `${process.env.REACT_APP_API_URL}/books`,
-          { withCredentials: true }
-        );
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/books`, { withCredentials: true });
         setBooks(response.data);
       } catch (error) {
         console.error("Error fetching books:", error);
@@ -43,14 +40,16 @@ export const Home = () => {
     fetchBooks();
   }, []);
 
+  const filteredBooks = books.filter(book => book.title.toLowerCase().includes(searchQuery.toLowerCase()));
+
   return (
     <>
-      <Header username={user ? user.username : null} />
+      <Header username={user ? user.username : null} searchQuery={searchQuery} onSearchChange={(e) => setSearchQuery(e.target.value)} />
       <div>
         <h1>Books</h1>
-        {books.length > 0 ? (
+        {filteredBooks.length > 0 ? (
           <ul className="book-list">
-            {books.map((book) => (
+            {filteredBooks.map((book) => (
               <li key={book.id} className="book">
                 <h2>{book.title}</h2>
                 <p>{book.comment}</p>
@@ -74,4 +73,5 @@ export const Home = () => {
     </>
   );
 };
+
 export default Home;
