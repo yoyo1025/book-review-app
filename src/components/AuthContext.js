@@ -7,8 +7,9 @@ export const useAuth = () => useContext(AuthContext);
 export const AuthProvider = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  const login = (token) => {
+  const login = (token, userId) => {
     localStorage.setItem("token", token);
+    localStorage.setItem("userId", userId);
     setIsAuthenticated(true);
   };
 

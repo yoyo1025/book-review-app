@@ -18,7 +18,8 @@ export const Login = () => {
         `${process.env.REACT_APP_API_URL}/login`,
         { email, password }
       );
-      login(response.data.token); // 認証状態を更新
+      console.log(response.data);
+      login(response.data.token_string, response.data.id); // 認証状態を更新
       navigate("/home");
     } catch (error) {
       console.error("Login error", error);
