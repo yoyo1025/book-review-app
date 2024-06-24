@@ -206,7 +206,9 @@ a {
 .search-user{
   width: 35%;
   padding: 20px;
-  margin: 2%;
+  margin: 1%;
+  margin-right: 2%;
+  margin-left: 8%;
   font-size: 200%;
   border-radius: 10px;
   border: 3px solid #8c8c8c;
@@ -222,4 +224,14 @@ a {
   height: 75px;
   border-radius: 10px;
   font-size: 150%;
+}
+
+.username {
+  font-size: 200%;
+  background-color: #d1edef;
+  border-radius: 5px;
+  margin-left: 32%;
+  margin-right: 32%;
+  border: 2px solid #000000;
+  box-shadow: 32px 33px 24px -25px #c7c7c7;
 }
