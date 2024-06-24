@@ -82,8 +82,10 @@ a {
 
 .search-box {
   padding: 15px;
-  margin: 40px;
+  margin: 25px;
   width: 35%;
+  border-radius: 10px;
+  font-size: 100%;
 }
 
 .create-review {
@@ -96,6 +98,7 @@ a {
   font-weight: bold;
   font-size: 20px;
   padding: 20px;
+  border-radius: 10px;
 }
 
 /* フォームコンテナのスタイリング */
@@ -167,7 +170,7 @@ a {
   box-shadow: 32px 33px 24px -25px #777777;
 }
 .review-comment-container {
-  font-size: 150%;
+  font-size: 200%;
   width: 90%;
   padding: 10px;
   border-radius: 10px;

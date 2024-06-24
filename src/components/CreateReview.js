@@ -60,7 +60,7 @@ export const CreateReview = () => {
 
   return (
     <>
-      <h1>書籍を投稿する</h1>
+      <h2>書籍を投稿する</h2>
       <hr />
       <div className="form-container">
         <form onSubmit={handleSubmit}>

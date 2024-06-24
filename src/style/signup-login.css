@@ -10,6 +10,10 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
+
 .formContainer form {
   background-color: #f8f8f8;
   width: 70%;
@@ -71,6 +75,14 @@ button:hover {
   font-size: 150%;
 }
 
+.username {
+  font-size: 130%;
+}
+
 .password {
   font-size: 150%;
+}
+
+.submitButton {
+  font-size: 140%;
 }
