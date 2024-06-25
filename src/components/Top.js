@@ -49,7 +49,7 @@ export const Top = () => {
         </form>
         {targetUser && (
           <div className="username">
-            <Link to={`/userbooks/${targetUser.id}`} className="username-link">{targetUser.username}</Link>
+            <Link to={`/userbooks/${targetUser.id}`} className="username-link   3">{targetUser.username}</Link>
           </div>
         )}
         <div className="top-pictures">
