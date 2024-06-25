@@ -85,7 +85,7 @@ a {
   margin-left: 25%;
   width: 35%;
   border-radius: 10px;
-  font-size: 100%;
+  font-size: 150%;
 }
 
 .create-review {
@@ -234,4 +234,42 @@ a {
   margin-right: 32%;
   border: 2px solid #000000;
   box-shadow: 32px 33px 24px -25px #c7c7c7;
+}
+.home-header2 {
+  background: rgb(166, 149, 255);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(166, 149, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(166, 149, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(166, 149, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a695ff",endColorstr="#00d4ff",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4d36c6",endColorstr="#00d4ff",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5c37b4",endColorstr="#00d4ff",GradientType=1);
+  display: flex;
+  justify-content: center;
+}
+
+.search-box2 {
+  padding: 15px;
+  margin: 15px;
+  width: 35%;
+  border-radius: 10px;
+  font-size: 150%; 
+}
+
+.username-link {
+  color: #000000;
 }

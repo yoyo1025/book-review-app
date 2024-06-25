@@ -4,6 +4,7 @@ import robot from "./../images/robot.jpg"
 import "../style/App.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 
 
@@ -48,7 +49,7 @@ export const Top = () => {
         </form>
         {targetUser && (
           <div className="username">
-            {targetUser.username}
+            <Link to={`/userbooks/${targetUser.id}`} className="username-link">{targetUser.username}</Link>
           </div>
         )}
         <div className="top-pictures">

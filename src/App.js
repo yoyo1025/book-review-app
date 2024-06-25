@@ -8,6 +8,7 @@ import Top from "./components/Top";
 import Home from "./components/Home";
 import CreateReview from "./components/CreateReview";
 import ProtectedRoute from "./components/ProtectedRoute";
+import UserProfile from "./components/UserProfile";
 
 function App() {
   useEffect(() => {
@@ -15,9 +16,7 @@ function App() {
 
     const getCsrfToken = async () => {
       try {
-        const { data } = await axios.get(
-          `${process.env.REACT_APP_API_URL}/csrf`
-        );
+        const { data } = await axios.get(`${process.env.REACT_APP_API_URL}/csrf`);
         axios.defaults.headers.common["X-CSRF-Token"] = data.csrf_token;
       } catch (error) {
         console.error("Error fetching CSRF token:", error);
@@ -34,6 +33,7 @@ function App() {
           <Route path="/" element={<Top />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/userbooks/:userId" element={<UserProfile />} />
           <Route
             path="/home"
             element={
